@@ -7,6 +7,7 @@ class Book(models.Model):
     image = models.ImageField(verbose_name="Image", upload_to="static/Books/img")
     title = models.CharField(max_length=256, verbose_name="Title")
     description = models.TextField(verbose_name="Description")
+    isbn = models.CharField(max_length=256, verbose_name="ISBN Number")
     price = models.IntegerField(verbose_name="Price")
     state = models.CharField(max_length=256, verbose_name="State")
     city = models.CharField(max_length=256, verbose_name="City")

@@ -26,7 +26,8 @@
                 <form method="POST" action="{% url 'sell' %}" enctype="multipart/form-data">
                     {% csrf_token %}
                     <fieldset class="form-group">
-                        <legend class="border-bottom mb-4">Sell A Book</legend>
+                        <legend class="border-bottom mb-4">Sell Or Donate A Book</legend>
+                        <h5>Note: Enter price as 0 to donate.</h5>
                         {{ form|crispy }}
                     </fieldset>
                     <div class="form-group">
