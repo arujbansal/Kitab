@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Sell{% endblock title %}
+{% block css %}
+    <style>
+        body {
+            background: url({% static 'Home/img/whitebg.png' %}) repeat center center fixed;
+            background-size: cover;
+            padding-top: 7%;
+        }
+    </style>
+{% endblock css %}
+{% block content %}
+    <div class="container" style="padding: 2%">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h1>Coming Soon!</h1>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        </div>
+    </div>
+{% endblock content %}

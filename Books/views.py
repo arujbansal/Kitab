@@ -23,3 +23,7 @@ def buy(request):
     available_books = Book.objects.all()
     first_3 = available_books[0:2]
     return render(request, 'Books/buy.html', {"books": available_books, "first_3": first_3})
+
+
+def donate(request):
+    return render(request, 'Books/donate.html')
