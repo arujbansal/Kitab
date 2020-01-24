@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Home',
     'users',
     'Books',
+    'Payments',
 ]
 
 MIDDLEWARE = [
