@@ -119,6 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATICFILES_DIR]
+STATIC_ROOT = '/home/kitab/kitab/static'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_URL = '/login'
 LOGIN_REDIRECT_URL = '/'

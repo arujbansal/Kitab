@@ -4,7 +4,7 @@ from django.conf import settings
 
 class Book(models.Model):
     rel_user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name="Posted By")
-    image = models.ImageField(verbose_name="Image", upload_to="static/Books/img")
+    image = models.ImageField(verbose_name="Image", upload_to="kitab/static/Books/img")
     title = models.CharField(max_length=256, verbose_name="Title")
     description = models.TextField(verbose_name="Description")
     isbn = models.CharField(max_length=256, verbose_name="ISBN Number")
